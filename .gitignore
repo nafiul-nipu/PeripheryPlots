@@ -9,3 +9,4 @@ DS_Store?
 vscode?
 
 *.txt
+node_modules/
