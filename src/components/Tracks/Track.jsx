@@ -172,7 +172,7 @@ class Track extends React.Component {
     }
 
     updateTooltip = () => {
-
+        // console.log(this.props)
         let { focusWidth, numContextsPerSide, timeDomains } = this.props;
         let { formatter, timeScale } = this.state;  
 
@@ -186,6 +186,7 @@ class Track extends React.Component {
                             .invert(x);
 
         let dateString = formatter(currentDate); 
+        console.log(dateString)
         let containerNode = select(this.FOCUS_REF).node();
 
         selectAll('.focus-time-text').each(function(d,i) {
