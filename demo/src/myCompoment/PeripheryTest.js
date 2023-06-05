@@ -3,7 +3,7 @@ import { timeMonth } from 'd3-time';
 import { format } from 'd3-format';
 import { extent } from 'd3-array';
 import loadData from '../loadData';
-import PeripheryPlots, {LineGroup, LineChart} from "../../../src/index.js";
+import PeripheryPlots, {LineGroup, AreaChart, BarGroup, ScatterGroup} from "../../../src/index.js";
 
 export const PeripheryPlotsTest = (props) => {
     const [data, setData] = useState(loadData());
@@ -21,13 +21,13 @@ export const PeripheryPlotsTest = (props) => {
         trackwiseAxisTickFormatters: [format(",.1f"), null, format(",.1f")], 
         trackwiseEncodings: [
             [
-                [LineChart], [LineChart], [LineChart]
+                [AreaChart], [LineGroup], [AreaChart]
             ], 
             [
-                [LineChart], [LineChart], [LineChart]            
+                [BarGroup], [AreaChart], [BarGroup]            
             ], 
             [
-                [LineChart], [LineChart], [LineChart]            
+                [ScatterGroup], [BarGroup], [ScatterGroup]            
             ]
         ],
 
