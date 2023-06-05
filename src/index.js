@@ -9,6 +9,8 @@ import QuantitativeTraceGroup from "./encodings/VPE/QuantitativeTraceGroup";
 import NominalTraceGroup from "./encodings/VPE/NominalTraceGroup"; 
 import AverageLineGroup from "./encodings/VPE/AverageLineGroup"; 
 
+import { LineChart } from "./encodings/TVPE/LineChart";
+
 import PeripheryPlotContext from "./context/periphery-plot-context"; 
 import getPeripheryPlotSubComponents from "./components/Wrappers/getPeripheryPlotSubComponents"; 
 
@@ -35,6 +37,8 @@ export {
     QuantitativeTraceGroup,
     NominalTraceGroup,
     AverageLineGroup,
+
+    LineChart,
 
     // Distributed Component Rendering 
     getPeripheryPlotSubComponents, 
